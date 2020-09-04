@@ -1,0 +1,10 @@
+/.metadata/
+/sw_usb_audio/adc/.settings/
+.build_Debug/
+*.d
+*.o
+/sw_usb_audio/adc/.build
+/sw_usb_audio/adc/.build_My
+/sw_usb_audio/adc/.build_REV0
+/sw_usb_audio/adc/.build_REV1
+/sw_usb_audio/adc/.build_REV2

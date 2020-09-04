@@ -1,0 +1,10 @@
+/.metadata/
+/sw_usb_audio/app_my/.settings/
+.build_Debug/
+*.d
+*.o
+/sw_usb_audio/app_my/.build
+/sw_usb_audio/app_my/.build_My
+/sw_usb_audio/app_my/.build_REV0
+/sw_usb_audio/app_my/.build_REV1
+/sw_usb_audio/app_my/.build_REV2
