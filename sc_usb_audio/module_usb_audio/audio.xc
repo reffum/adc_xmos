@@ -651,6 +651,14 @@ unsigned static deliver(chanend c_out, chanend ?c_spd_out,
                 unsigned sample;
                 asm volatile("in %0, res[%1]" : "=r"(sample)  : "r"(p_i2s_adc[index++]));
 
+#ifdef REV1
+                sample = sample << 1;
+#endif
+
+#ifdef REV2
+                sample = sample << 2;
+#endif
+
                 /* Note the use of readBuffNo changes based on frameCount */
                 if(buffIndex)
                     samplesIn_1[((frameCount-2)&(I2S_CHANS_PER_FRAME-1))+i] = bitrev(sample); // channels 0, 2, 4.. on each line.

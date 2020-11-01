@@ -16,7 +16,9 @@ USED_MODULES = module_dfu module_usb_audio module_usb_device module_usb_shared m
 # XCC_XC_FLAGS, XCC_C_FLAGS, XCC_ASM_FLAGS, XCC_CPP_FLAGS
 # If the variable XCC_MAP_FLAGS is set it overrides the flags passed to
 # xcc for the final link (mapping) stage.
-XCC_FLAGS_Debug = -O3 -lquadflash -DQUAD_SPI_FLASH=1 -DXUD_SERIES_SUPPORT=4
+XCC_FLAGS_REV0 = -O3 -lquadflash -DQUAD_SPI_FLASH=1 -DXUD_SERIES_SUPPORT=4
+XCC_FLAGS_REV1 = -O3 -lquadflash -DQUAD_SPI_FLASH=1 -DXUD_SERIES_SUPPORT=4
+XCC_FLAGS_REV2 = -O3 -lquadflash -DQUAD_SPI_FLASH=1 -DXUD_SERIES_SUPPORT=4
 
 # The XCORE_ARM_PROJECT variable, if set to 1, configures this
 # project to create both xCORE and ARM binaries.
